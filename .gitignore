@@ -1,0 +1,39 @@
+# Data files (too large for git)
+data/raw/
+data/processed/
+data/merged/
+*.csv
+*.tsv
+*.h5
+*.parquet
+*.xlsx
+
+# Results
+results/
+*.png
+*.pdf
+*.jpg
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Keep structure but ignore content
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/merged/.gitkeep
+!results/figures/.gitkeep
+!results/tables/.gitkeep
