@@ -5,37 +5,24 @@ channels:
   - defaults
 dependencies:
   - python=3.11
-  - pandas=2.1
-  - numpy=1.26
-  - scipy=1.11
-  - scikit-learn=1.4
-  - matplotlib=3.8
-  - seaborn=0.13
+  - pandas
+  - numpy
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
   - jupyter
-  - notebook
   - jupyterlab
   
   # Survival analysis
-  - lifelines=0.28
+  - lifelines
   
   # Bioinformatics
-  - bioconda::gseapy=1.1
-  
-  # Deep learning (optional, for later)
-  - pytorch
-  - pytorch-cuda=12.1  # or cpu version
-  
-  # R integration for GSVA
-  - r-base=4.3
-  - rpy2
-  
-  # Utilities
-  - requests
-  - tqdm
-  - openpyxl
-  
-  # pip packages
   - pip
   - pip:
-    - scanpy  # for pathway scoring if needed
+    - gseapy
+    - scanpy
     - anndata
+    - requests
+    - tqdm
+    - openpyxl
